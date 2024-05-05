@@ -6,6 +6,17 @@
         }
     }
 }
+
+@media (max-width: 800px) {
+    .carousel{
+        height: 300px;
+    }
+}
+@media (max-width: 500px) {
+    .carousel{
+        height: 200px;
+    }
+}
 .react-multi-carousel-item{
     width: 200px !important;
     height: 320px;
@@ -15,9 +26,8 @@
     background: #fff;
     border-radius: 10px;
     box-shadow: 1.8px 1.8px 10px 1px #0000005a;
-    margin: 30px;
+    margin-left: 30px;
     cursor: pointer;
-
 
 }
 .mobileSliderCard{

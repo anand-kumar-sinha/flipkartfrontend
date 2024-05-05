@@ -39,14 +39,14 @@ const Home = () => {
 
       {/* mobile slider */}
 
-      <div style={{ padding: "50px" }}>
+      <div className="mobilecat">
         <p className="title">Top Mobiles</p>
         <MobSlider />
       </div>
 
       {/* cloth slider */}
 
-      <div style={{ padding: "50px" }}>
+      <div  className="mobilecat">
         <p className="title">Top Cloths</p>
         <ClothSlider />
       </div>
