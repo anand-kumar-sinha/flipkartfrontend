@@ -7,11 +7,6 @@
     }
 }
 
-@media (max-width: 800px) {
-    .carousel{
-        height: 300px;
-    }
-}
 @media (max-width: 500px) {
     .carousel{
         height: 200px;
@@ -47,5 +42,20 @@
         transition: all 0.3s;
         width: 100%;
         border-radius: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .carousel{
+        height: 300px;
+    }
+    .react-multi-carousel-item{
+        width: 150px !important;
+        height: 250px;
+    }
+    .mobileSliderCard{
+        >p{
+            font-size: 20px;
+        }
     }
 }
