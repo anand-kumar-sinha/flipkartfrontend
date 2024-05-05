@@ -78,22 +78,23 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    width: 100vw;
+  }
   .nav > :last-child {
     display: none;
   }
   .nav-opt > ul {
-    margin-bottom:  0;
+    margin-bottom: 0;
   }
   .productNav {
-  
     > .catCont {
-
       > img {
         transition: all 0.3s;
         width: 30px;
       }
 
-      >p{
+      > p {
         font-size: 12px;
       }
     }

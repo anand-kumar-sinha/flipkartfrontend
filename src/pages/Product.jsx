@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "../index.scss";
 import Navbar from "../components/Navbar/Navbar";
-import ProductCategory from "../components/Navbar/ProductCategory";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import { Rating, ThinStar  } from '@smastrom/react-rating'
+import '@smastrom/react-rating/style.css'
+import { PiVanFill } from "react-icons/pi";
+
 
 const Product = () => {
   const [product, setProduct] = useState();
@@ -17,10 +20,15 @@ const Product = () => {
     item = JSON.parse(item);
     setProduct(item);
   };
+
+  const myStyles = {
+    itemShapes: ThinStar,
+    activeFillColor: '#ffb700',
+    inactiveFillColor: '#fbf1a9'
+  }
   return (
     <>
       <Navbar />
-      <ProductCategory />
 
       <div className="product">
         <div className="productImg">
@@ -57,12 +65,17 @@ const Product = () => {
         </div>
         <div className="productData">
           <p className="productName">{product?.name}</p>
+          <Rating style={{ maxWidth: 100, marginBottom: '10px'}} value={4} itemStyles={myStyles}/>
+          <p className="productYear">Lowest Price Ever</p>
           <span>
-            <p className="productPrice">₹ {product?.price}</p>
-            <p className="productPrice offer">₹ {product?.price}</p>
             <p className="productPrice off"> {product?.price}%off</p>
+            <p className="productPrice offer">{product?.price}</p>
+            <p className="productPrice">₹{product?.price}</p>
           </span>
 
+          <div className="productDelivery"><PiVanFill /><p>Free Delivery</p></div>
+
+          <p style={{marginLeft: '2px', fontWeight: '600',  fontSize: '22px'}}>Size</p>
           <div className="size">
             <div>32B</div>
             <div>32B</div>
