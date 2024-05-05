@@ -6,6 +6,7 @@ import { Carousel } from "react-responsive-carousel";
 import { Rating, ThinStar  } from '@smastrom/react-rating'
 import '@smastrom/react-rating/style.css'
 import { PiVanFill } from "react-icons/pi";
+import ClothSlider from "../components/Slider/ClothSlider";
 
 
 const Product = () => {
@@ -90,6 +91,7 @@ const Product = () => {
           <button>Buy</button>
         </div>
       </div>
+      
     </>
   );
 };

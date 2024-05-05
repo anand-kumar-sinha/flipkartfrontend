@@ -45,7 +45,9 @@
   align-items: center;
   list-style: none;
 }
-
+.nav-opt > ul {
+  margin-bottom: 0;
+}
 .nav-opt > ul > li {
   margin: 0 10px;
   cursor: pointer;
