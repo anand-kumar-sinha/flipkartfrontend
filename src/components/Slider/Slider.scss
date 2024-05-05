@@ -1,0 +1,41 @@
+.carousel{
+    .imgCont{
+        height: 500px;
+        >img{
+            
+        }
+    }
+}
+.react-multi-carousel-item{
+    width: 200px !important;
+    height: 320px;
+    padding: 20px !important;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1.8px 1.8px 10px 1px #0000005a;
+    margin: 30px;
+    cursor: pointer;
+
+
+}
+.mobileSliderCard{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover{
+        >img{
+            scale: 1.15;
+        }
+    }
+
+    >img{
+        transition: all 0.3s;
+        width: 100%;
+        border-radius: 10px;
+    }
+}
